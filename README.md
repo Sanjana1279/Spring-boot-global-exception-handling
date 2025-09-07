@@ -1,12 +1,25 @@
 # Spring Boot Global Exception Handling
 
-This is a **Spring Boot project** demonstrating:
+**Project Overview**
 
-- REST API for `User` CRUD operations
-- Global exception handling with `@ControllerAdvice`
-- Custom exceptions (`ResourceNotFoundException`, `BadRequestException`)
-- Validation with `@Valid` and `jakarta.validation`
-- Unit tests with JUnit 5 and MockMvc
+This project demonstrates how to implement global exception handling in a Spring Boot REST API application. It provides a robust way to handle different types of exceptions and return meaningful error responses to clients in a consistent format.
+
+- REST APIs for CRUD operations on User entities.
+- Custom exceptions (ResourceNotFoundException, BadRequestException).
+- Global exception handler (@ControllerAdvice) to handle exceptions across the application.
+- Validation using Jakarta Validation API (@NotBlank, @Email).
+- Unit and integration tests for services and controllers.
+
+  ---
+## **  Technologies Used**
+
+- Java 17
+- Spring Boot 3.1.x
+- Maven
+- JUnit 5
+- Mockito
+- Jakarta Validation API
+- Git & GitHub
 
 ## Running the Project
 
@@ -14,12 +27,30 @@ The application will run on http://localhost:8080/users
 
 **API Endpoints**
 
-Method	Endpoint	Description
+HTTP Method	Endpoint	Description
 GET	/api/users	Get all users
-GET	/api/users/{id}	Get user by ID
+GET	/api/users/{id}	Get a user by ID
 POST	/api/users	Create a new user
-PUT	/api/users/{id}	Update user
-DELETE	/api/users/{id}	Delete user
+PUT	/api/users/{id}	Update an existing user
+DELETE	/api/users/{id}	Delete a user by ID
 
 ---
 **Testing**
+
+**Sample Request**
+
+POST /api/users
+
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+**Sample Error Response**
+{
+  "timestamp": "2025-09-07T19:14:09.631",
+  "status": 404,
+  "error": "Not Found",
+  "message": "User not found with id: 99",
+  "details": null
+}
