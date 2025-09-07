@@ -26,12 +26,13 @@ The application will run on http://localhost:8080/users
 
 **API Endpoints**
 
-HTTP Method	Endpoint	Description
-GET	/api/users	Get all users
-GET	/api/users/{id}	Get a user by ID
-POST	/api/users	Create a new user
-PUT	/api/users/{id}	Update an existing user
-DELETE	/api/users/{id}	Delete a user by ID
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET   | `api/users` | Get all users |
+| GET    | `/api/users/{id}` | Get a user by ID |
+| POST    | `/api/users` | Create a new user|
+| PUT    | `/api/users/{id}` | Update an existing user|
+| DELETE | `/api/users/{id}` | Delete a user by ID |
 
 **Testing**
 
