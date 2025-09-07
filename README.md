@@ -10,7 +10,6 @@ This project demonstrates how to implement global exception handling in a Spring
 - Validation using Jakarta Validation API (@NotBlank, @Email).
 - Unit and integration tests for services and controllers.
 
-  ---
 ## **  Technologies Used**
 
 - Java 17
@@ -34,7 +33,6 @@ POST	/api/users	Create a new user
 PUT	/api/users/{id}	Update an existing user
 DELETE	/api/users/{id}	Delete a user by ID
 
----
 **Testing**
 
 **Sample Request**
