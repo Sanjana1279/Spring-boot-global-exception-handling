@@ -10,7 +10,7 @@ This project demonstrates how to implement global exception handling in a Spring
 - Validation using Jakarta Validation API (@NotBlank, @Email).
 - Unit and integration tests for services and controllers.
 
-## **  Technologies Used**
+##  Technologies Used
 
 - Java 17
 - Spring Boot 3.1.x
