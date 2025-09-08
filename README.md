@@ -13,7 +13,7 @@
 - [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
-- [Sample Requests & Responses](#sample-request--response)
+- [Sample Requests & Responses](#sample-requests--responses)
 
 
 ---
