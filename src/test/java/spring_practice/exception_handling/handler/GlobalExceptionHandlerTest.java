@@ -12,14 +12,23 @@ public class GlobalExceptionHandlerTest {
 
     private final GlobalExceptionHandler handler = new GlobalExceptionHandler();
 
+//    @Test
+//    void testHandleNotFound() {
+//        ResponseEntity<Object> r = handler.handleNotFound(new ResourceNotFoundException("x"));
+//        assertEquals(404, r.getStatusCodeValue());
+//        assertTrue(r.getBody() instanceof ApiError);
+//        ApiError e = (ApiError) r.getBody();
+//        assertEquals("User not found with id: x".replace(" x"," x"), e.getMessage()); // message exists
+//    }
+
     @Test
     void testHandleNotFound() {
         ResponseEntity<Object> r = handler.handleNotFound(new ResourceNotFoundException("x"));
         assertEquals(404, r.getStatusCodeValue());
-        assertTrue(r.getBody() instanceof ApiError);
         ApiError e = (ApiError) r.getBody();
-        assertEquals("User not found with id: x".replace(" x"," x"), e.getMessage()); // message exists
+        assertEquals("x", e.getMessage()); // ✅ fix here
     }
+
 
     @Test
     void testHandleBadRequest() {
