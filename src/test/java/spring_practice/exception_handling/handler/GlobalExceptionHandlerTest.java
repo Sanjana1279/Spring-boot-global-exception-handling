@@ -26,7 +26,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<Object> r = handler.handleNotFound(new ResourceNotFoundException("x"));
         assertEquals(404, r.getStatusCodeValue());
         ApiError e = (ApiError) r.getBody();
-        assertEquals("x", e.getMessage()); // ✅ fix here
+        assertEquals("x", e.getMessage()); // 
     }
 
 
