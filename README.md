@@ -9,12 +9,12 @@
 ##  Table of Contents
 - [Overview](#project-overview)
 - [Code Coverage](#code-coverage-jacoco)
-- [Technologies Used](#-technologies-used)
-- [Running the Project](#-running-the-project)
+- [Technologies Used](#technologies-used)
+- [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 - [Sample Requests & Responses](#sample-request--response)
-- [License](#-license)
+
 
 ---
 
@@ -95,4 +95,17 @@ Content-Type: application/json
   "message": "User not found with id: 99",
   "details": null
 }
+
+**Sample Request**
+
+```http
+POST /api/users
+Content-Type: application/json
+
+`json` 
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
 
