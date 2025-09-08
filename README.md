@@ -96,6 +96,11 @@ Content-Type: application/json
 
 **Sample Error Response**
 
+```http
+GET /api/users/99
+Content-Type: application/json
+```
+
 ```json
 {
   "timestamp": "2025-09-07T19:14:09.631",
