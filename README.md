@@ -84,6 +84,7 @@ mvn test
 POST /api/users
 Content-Type: application/json
 
+```json
 {
   "name": "Alice",
   "email": "alice@example.com"
@@ -93,7 +94,7 @@ Content-Type: application/json
 
 **Sample Error Response**
 
-```http
+```json
 {
   "timestamp": "2025-09-07T19:14:09.631",
   "status": 404,
@@ -102,4 +103,10 @@ Content-Type: application/json
   "details": null
 }
 ```
+
+
+
+
+
+
 
