@@ -6,9 +6,9 @@
   </a>
 </p>
 
-## 📖 Table of Contents
+##  Table of Contents
 - [Overview](#project-overview)
-- [Code Coverage](#-code-coverage-jacoco)
+- [Code Coverage](#code-coverage-jacoco)
 - [Technologies Used](#-technologies-used)
 - [Running the Project](#-running-the-project)
 - [API Endpoints](#api-endpoints)
