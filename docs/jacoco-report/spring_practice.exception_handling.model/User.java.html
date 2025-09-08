@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>User.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">exception_handling</a> &gt; <a href="index.source.html" class="el_package">spring_practice.exception_handling.model</a> &gt; <span class="el_source">User.java</span></div><h1>User.java</h1><pre class="source lang-java linenums">package spring_practice.exception_handling.model;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public class User {
+    private Long id;
+
+    @NotBlank(message = &quot;name is mandatory&quot;)
+    private String name;
+
+    @Email(message = &quot;email must be valid&quot;)
+    private String email;
+
+<span class="fc" id="L16">    public User() {}</span>
+
+<span class="fc" id="L18">    public User(Long id, String name, String email) {</span>
+<span class="fc" id="L19">        this.id = id;</span>
+<span class="fc" id="L20">        this.name = name;</span>
+<span class="fc" id="L21">        this.email = email;</span>
+<span class="fc" id="L22">    }</span>
+
+    public Long getId() {
+<span class="fc" id="L25">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="fc" id="L29">        this.id = id;</span>
+<span class="fc" id="L30">    }</span>
+
+    public String getName() {
+<span class="fc" id="L33">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L37">        this.name = name;</span>
+<span class="fc" id="L38">    }</span>
+
+    public String getEmail() {
+<span class="fc" id="L41">        return email;</span>
+    }
+
+    public void setEmail(String email) {
+<span class="fc" id="L45">        this.email = email;</span>
+<span class="fc" id="L46">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
