@@ -1,4 +1,12 @@
 # Spring Boot Global Exception Handling
+##  Code Coverage (JaCoCo)
+
+This project uses **JaCoCo** to measure test coverage.
+
+- **Coverage Report**: [View full HTML report](https://sanjana1279.github.io/Spring-boot-global-exception-handling/jacoco-report/index.html)
+
+![Coverage Badge](https://img.shields.io/badge/Coverage-73%25-yellowgreen)
+
 
 **Project Overview**
 
