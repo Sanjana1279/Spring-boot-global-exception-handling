@@ -83,6 +83,7 @@ mvn test
 ```http
 POST /api/users
 Content-Type: application/json
+```
 
 ```json
 {
@@ -91,7 +92,7 @@ Content-Type: application/json
 }
 
 ```
-```
+
 
 **Sample Error Response**
 
