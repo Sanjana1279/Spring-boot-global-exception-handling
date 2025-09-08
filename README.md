@@ -76,25 +76,7 @@ mvn test
 
 ```
 
-**Sample Request**
-
-POST /api/users
-Content-Type: application/json
-
-{
-  "name": "Alice",
-  "email": "alice@example.com"
-}
-
-
-**Sample Error Response**
-{
-  "timestamp": "2025-09-07T19:14:09.631",
-  "status": 404,
-  "error": "Not Found",
-  "message": "User not found with id: 99",
-  "details": null
-}
+## Sample Requests & Responses
 
 **Sample Request**
 
@@ -102,10 +84,22 @@ Content-Type: application/json
 POST /api/users
 Content-Type: application/json
 
-`json` 
 {
   "name": "Alice",
   "email": "alice@example.com"
 }
 
+```
+
+**Sample Error Response**
+
+```http
+{
+  "timestamp": "2025-09-07T19:14:09.631",
+  "status": 404,
+  "error": "Not Found",
+  "message": "User not found with id: 99",
+  "details": null
+}
+```
 
