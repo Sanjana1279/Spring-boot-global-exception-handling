@@ -52,7 +52,7 @@ It provides a robust way to handle different types of exceptions and return mean
 
 ##  Running the Project
 Start the application and it will be available at:  
-👉 `http://localhost:8080/users`
+ `http://localhost:8080/users`
 
 ---
 
@@ -90,6 +90,7 @@ Content-Type: application/json
   "email": "alice@example.com"
 }
 
+```
 ```
 
 **Sample Error Response**
