@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+exception_handling,spring_practice.exception_handling.dto,ApiError,0,37,0,0,0,16,0,10,0,10
+exception_handling,spring_practice.exception_handling,ExceptionHandlingApplication,5,3,0,0,2,1,1,1,1,1
+exception_handling,spring_practice.exception_handling.service,UserService,36,98,3,3,6,19,3,6,1,5
+exception_handling,spring_practice.exception_handling.handler,GlobalExceptionHandler,54,113,0,0,14,26,2,6,2,6
+exception_handling,spring_practice.exception_handling.exception,BadRequestException,0,4,0,0,0,2,0,1,0,1
+exception_handling,spring_practice.exception_handling.exception,ResourceNotFoundException,0,4,0,0,0,2,0,1,0,1
+exception_handling,spring_practice.exception_handling.controller,UserController,23,29,2,2,5,7,5,3,3,3
+exception_handling,spring_practice.exception_handling.model,User,0,36,0,0,0,15,0,8,0,8
